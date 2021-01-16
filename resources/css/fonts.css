@@ -1,0 +1,16 @@
+/* Font Declarations */
+@font-face {
+    font-family: HelveticaNeue-Medium, Arial, Helvetica, sans-serif;
+    src: url('../fonts/HelveticaNeue-Medium.ttf')
+}
+
+@font-face {
+    font-family: Ubuntu-Medium, Arial, Helvetica, sans-serif;
+    src: url('../fonts/Ubuntu-Medium.ttf')
+}
+
+
+@font-face {
+    font-family: GoudyBookletter1911-Regular, Arial, Helvetica, sans-serif;
+    src: url('../fonts/GoudyBookletter1911-Regular.ttf')
+}

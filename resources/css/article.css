@@ -1,0 +1,16 @@
+#main{
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-column-gap: 0.3%;
+}
+
+#s1 {
+  grid-column-start: span 3;
+}
+#s1, #s3 {
+  background-color: #eee;
+}
+
+#s2 {
+  background-color: #ddd;
+}

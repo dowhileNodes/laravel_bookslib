@@ -1,0 +1,41 @@
+/* Footer CSS */
+footer, footer li a{
+  color:white;
+}
+
+footer nav{
+  width:100%;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 3%;
+  padding-left: 3%;
+}
+
+#flink4 li {
+  display: inline;
+}
+
+#fcredits{
+  grid-column-start: span 6;
+  font-size: 9pt;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+footer ul{
+  list-style-type: none;
+  padding: 0; /* remove list indent */
+}
+
+footer li a{
+  font-size: 10pt;
+  text-decoration: none;  /* remove underline */
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer li a:hover{
+  text-decoration: underline;
+}
