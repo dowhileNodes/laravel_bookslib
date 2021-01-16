@@ -17,5 +17,6 @@
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(.+)$ public/?path=$1 [L,QSA]
+    RewriteRule ^public_$ public_/ [R,QSA]
+    RewriteRule ^public_/$ public/index.php?state=public [L,QSA]
 </IfModule>
