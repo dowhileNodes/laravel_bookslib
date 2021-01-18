@@ -69,7 +69,7 @@
 											<a href="forgot-password">Forgot Password</a>
 										</div>
 										<div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-											<a href="\showRegisterView">Signup</a>
+											<a href="\showRegisterView">Sign-up</a>
 										</div>
 										<div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
 											<a href="\showUserList">Show available users (for Debug)</a>
