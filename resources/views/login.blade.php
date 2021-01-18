@@ -1,5 +1,6 @@
 @extends('layout')
 @section('content')
+<header> <h1> this is header </h1> </header>
 @if(Session::get('status'))
 
 <div class="alert alert-success alert-dismissible fade show" role="alert">
