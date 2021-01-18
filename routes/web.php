@@ -24,5 +24,17 @@ Route::post('/add','LibController@add');
 Route::get('/delete/{id}','LibController@delete');
 Route::get('/edit/{id}','LibController@edit');
 Route::post('edit','LibController@update');
-Route::get('/login','LibController@login');
-Route::get('register','LibController@register');
+Route::post('/list','LibController@list');
+
+
+Route::get('/showRegisterView','UserController@showRegisterView');
+Route::post('/doRegister','UserController@doRegister');
+Route::get('/redirectLogin','UserController@redirectLogin');
+Route::get('/showUserList','UserController@showUserList');
+Route::get('/deleteUser/{id}','UserController@deleteUser');
+
+/*
+Route for index
+*/
+Route::get('/index','LibController@index');
+Route::post('/index','LibController@index');

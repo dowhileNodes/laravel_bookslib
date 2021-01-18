@@ -14,9 +14,9 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Name</th>
+      <th scope="col">Fullname</th>
       <th scope="col">Email</th>
-      <th scope="col">Address</th>
+      <th scope="col">Password</th>
       <th>Operations</th>
     </tr>
   </thead>
@@ -24,11 +24,11 @@
   @foreach($data as $item)
     <tr>
       <th scope="row">{{$item->id}}</th>
-      <td>{{$item->name}}</td>
+      <td>{{$item->fullname}}</td>
       <td>{{$item->email}}</td>
-      <td>{{$item->address}}</td>
+      <td>{{$item->password}}</td>
       <td>
-      <a href="delete/{{$item->id}}"><button type="button" class="btn btn-danger">Delete</button></a>
+      <a href="deleteUser/{{$item->id}}"><button type="button" class="btn btn-danger">Delete</button></a>
       <a href="edit/{{$item->id}}"><button type="button" class="btn btn-warning">Edit</button></a>
       </td>
     </tr>

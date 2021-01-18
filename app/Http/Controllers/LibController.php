@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\LibController;
@@ -9,13 +8,21 @@ class LibController extends Controller
 {
     function index()
     {
-        return view('home');
+        return view('login');
     }
     function list() 
     {
         $data= Info::all();
         return view('list', ["data" =>$data]);
     }
+	
+
+	function login() 
+    {
+        $data= Info::all();
+        return view('login', ["data" =>$data]);
+    }
+	
     function add(Request $req)
     {
         //return $req->input();
@@ -29,6 +36,7 @@ class LibController extends Controller
 
         return redirect ('list');
     }
+	
     function delete($id)
     {
         Info::find($id)->delete();
@@ -36,11 +44,13 @@ class LibController extends Controller
 
         return redirect ('list');
     }
+	
     function edit($id)
     {
         $data= Info::find($id);
         return view('edit',['data'=>$data]);
     }
+	
     function update(Request $req)
     {
         //return $req->input();
@@ -51,18 +61,18 @@ class LibController extends Controller
         $info->address=$req->input('address');
         $info->save();
         $req->session()->flash('status', 'Updated succesfully');
-
         return redirect ('list');
     }
-    function login(Request $req)
+	
+    function login2(Request $req)
     {
-        $info = new Info;
-        $info->id=$req->input('id');
-        $info->email=$req->input('email');
-        $info->password=$req->input('password');
-        $info->save();
-        $req->session()->flash('status', 'Login succesfully');
+        //$info = new Info;
+        //$info->id=$req->input('id');
+        //$info->email=$req->input('email');
+        //$info->password=$req->input('password');
+        //$info->save();
+        //$req->session()->flash('status', 'Login succesfully');
 
-        return redirect ('home');
+        return redirect ('list');
     }
 }
